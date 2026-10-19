@@ -30,7 +30,7 @@ syste_files
 │   └── LICENSE
 └── private/                           # Personal information to be kept private
     ├── .git/
-    ├── private.nix                    # Your personal information
+    ├── personal.nix                    # Your personal information
     └── system/
         └── hardware-configuration.nix
 ```
@@ -39,11 +39,11 @@ syste_files
 
 ### private.nix
 
-*private.nix* is used to store information such as your hostname and username.
+*personal.nix* is used to store information such as your hostname and username.
 
-### private/system/
+### personal/system/
 
-*private/system/* is used to store your computers hardware information.
+*personal/system/* is used to store your computers hardware information.
 
 ## Using NixOS-Private
 
@@ -64,7 +64,7 @@ cd private
 
 cp ~/etc/nixos/hardware-configuration.nix system/
 
-# Edit the private.nix file's set username, hostname, timezone, and locale to match your desires.
+# Edit the personal.nix file's set username, hostname, timezone, and locale to match your desires.
 
 cd ../public
 ```
@@ -91,4 +91,4 @@ Select a previous version when booting up.
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2024-2026 Benjamin (Ben) LaShell
+Copyright (c) 2026 Benjamin (Ben) LaShell
